@@ -1,0 +1,83 @@
+body {
+}
+div#wrapper {
+    background: #efefef;
+    height: 400px;
+    margin: 30px auto;
+    overflow: hidden;
+    width: 400px;
+}
+div#status {
+    background: black;
+    float: left;
+    height: 100px;
+    width: 100px;
+}
+div#status a {
+    color: #fff;
+    font-size: 12px;
+    left: 10px;
+    position: relative;
+    text-decoration: none;
+}
+div#status a:hover {
+    border-bottom: 1px solid #fff;
+}
+div#top_nums {
+    float: left;
+    height: 100px;
+    overflow: hidden;
+    width: 300px;
+}
+div#top_nums div.col {
+    background: #fff;
+    float: right;
+    height: 100px;
+    text-align: center;
+    width: 30px;
+}
+div#left_nums {
+    clear: left;
+    float: left;
+    height: 300px;
+    overflow: hidden;
+    width: 100px;
+}
+div#left_nums div.row {
+    background: #fff;
+    float: left;
+    line-height: 30px;
+    height: 30px;
+    text-align: right;
+    width: 100px;
+}
+div#board {
+    float: left;
+    height: 300px;
+    position: relative;
+    width: 300px;
+}
+div.square {
+    background: #fff;
+    border: 1px solid black;
+    float: left;
+    height: 28px;
+    width: 28px;
+}
+div.square.maybe {
+    background: #aaa;
+}
+div.square.no {
+    background: rosybrown;
+}
+div.square.yes {
+    background: #333;
+}
+div.square.on {
+    background: green;
+    opacity: .5;
+}
+div.square.off {
+    background: red;
+    opacity: .5;
+}
