@@ -1,7 +1,7 @@
 body {
 }
 div#wrapper {
-    background: #efefef;
+    background: #fff;
     height: 400px;
     margin: 30px auto;
     overflow: hidden;
@@ -21,7 +21,23 @@ div#status a {
     text-decoration: none;
 }
 div#status a:hover {
-    border-bottom: 1px solid #fff;
+    color: deepskyblue;
+}
+div#status span {
+    line-height: 10px;
+}
+div#status label:hover {
+    color: deepskyblue;
+}
+div#status input[type="radio"] {
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+div#status label {
+    bottom: 2px;
+    color: #fff;
+    font-size: 10px;
+    position: relative;
 }
 div#top_nums {
     float: left;

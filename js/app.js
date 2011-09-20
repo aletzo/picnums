@@ -4,6 +4,25 @@ var puzzle = [];
 
 var puzzleReversed = [];
 
+var difficultyThreshold = 0.4;
+
+$('input[name="difficulty"]').change(function() {
+        
+    console.log($(this).val());
+    
+    if ($(this).val() == 'easy') {
+        difficultyThreshold = 0.3;
+    } else if ($(this).val() == 'normal') {
+        difficultyThreshold = 0.4;
+    } else if ($(this).val() == 'hard') {
+        difficultyThreshold = 0.5;
+    }
+    
+    console.log(difficultyThreshold);
+});
+
+
+
 $('#new').click(function() {
     generatePuzzle();
     
@@ -134,7 +153,7 @@ function getColNums(_y) {
 }
 
 function getRandomNum() {
-    return Math.random() >= 0.4 ? 1 : 0; //let's favor a bit the 1 to make the puzzle easier to solve
+    return Math.random() >= difficultyThreshold ? 1 : 0;
 }
 
 function generatePuzzle() {
@@ -161,7 +180,6 @@ function drawTopNums() {
         _html += '<div id="col' + i + '" class="col"></div>';
     }
     
-    console.log(_html);
     $('#top_nums').append(_html);
 }
 
