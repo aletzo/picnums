@@ -7,18 +7,15 @@ var puzzleReversed = [];
 var difficultyThreshold = 0.4;
 
 $('input[name="difficulty"]').change(function() {
-        
-    console.log($(this).val());
+    _val = $(this).val();
     
-    if ($(this).val() == 'easy') {
+    if (_val == 'easy') {
         difficultyThreshold = 0.3;
-    } else if ($(this).val() == 'normal') {
+    } else if (_val == 'normal') {
         difficultyThreshold = 0.4;
-    } else if ($(this).val() == 'hard') {
+    } else if (_val == 'hard') {
         difficultyThreshold = 0.5;
     }
-    
-    console.log(difficultyThreshold);
 });
 
 
